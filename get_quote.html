@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        input[type=text],
+        select,
+        textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            resize: vertical;
+        }
+
+        label {
+            padding: 12px 12px 12px 0;
+            display: inline-block;
+        }
+
+        input[type=submit] {
+            background-color: #04AA6D;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            float: right;
+        }
+
+        input[type=submit]:hover {
+            background-color: #45a049;
+        }
+
+        .container {
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+
+        .col-25 {
+            float: left;
+            width: 25%;
+            margin-top: 6px;
+        }
+
+        .col-75 {
+            float: left;
+            width: 75%;
+            margin-top: 6px;
+        }
+
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        @media screen and (max-width: 600px) {
+
+            .col-25,
+            .col-75,
+            input[type=submit] {
+                width: 100%;
+                margin-top: 0;
+            }
+        }
+
+        h1,
+        div.row,
+        div.panel-body,
+        div.panel {
+            background-color: rgb(18, 101, 234);
+        }
+
+        div {
+            background-color: rgb(151, 141, 183);
+        }
+
+        div.container {
+            border-style: dotted;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>CAR RESALE VALUE</h2>
+    <p>Know the best price ever.</p>
+
+    <div class="container">
+        <form action="/action_page.php">
+            <div class="row">
+
+                <div class="col-25">
+
+                    <label for="cname">Car Name</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="cname" name="carname" placeholder="car name..">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="yop">Year of purchase</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="yop" name="yop" placeholder="Your purchase year..">
+                </div>
+            </div>
+
+            <div class="row">
+
+                <div class="col-25">
+
+                    <label for="selltype">Seller Type</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="selltype" name="selltype" placeholder="Your seller type..">
+                </div>
+            </div>
+
+            <div class="row">
+
+                <div class="col-25">
+
+                    <label for="dd">Distance Driven</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="dd" name="dd" placeholder="Your Distance..">
+                </div>
+            </div>
+
+            <div class="row">
+
+                <div class="col-25">
+
+                    <label for="ot">Owner Type</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="ot" name="ot" placeholder="Owner type..">
+                </div>
+            </div>
+
+            <div class="row">
+
+                <div class="col-25">
+
+                    <label for="ft">Fuel Type</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="ft" name="ft" placeholder="Fuel type..">
+                </div>
+            </div>
+            <div class="row">
+
+                <div class="col-25">
+
+                    <label for="tt">Transmission Type</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="tt" name="tt" placeholder="Transmission type..">
+                </div>
+            </div>
+
+            <div class="row">
+
+                <div class="col-25">
+
+                    <label for="m">Mileage</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="m" name="m" placeholder="Mileage..">
+                </div>
+            </div>
+
+            <div class="row">
+
+                <div class="col-25">
+
+                    <label for="e">Engine</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="e" name="e" placeholder="Engine..">
+                </div>
+            </div>
+
+            <div class="row">
+
+                <div class="col-25">
+
+                    <label for="nos">Number of seats</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="nos" name="nos" placeholder="Number of seats..">
+                </div>
+            </div>
+
+            <div class="row">
+                <input type="submit" value="Predict Value">
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>
